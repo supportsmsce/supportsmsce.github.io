@@ -6,6 +6,10 @@ body {
   
 }
 
+.module {
+  margin-bottom: 20px;
+}
+
 .portfolio > [class^="col-"] {
   padding: 0;
 }
