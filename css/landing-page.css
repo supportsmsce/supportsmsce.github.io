@@ -171,7 +171,7 @@ header.masthead {
 }
 
 #map { 
- width: 80%;
+ width: 100%;
  height: 45vh;
 }
 
@@ -182,10 +182,10 @@ header.masthead {
   display: none;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 7px;
-}
+} */
 
 div.dataTables_wrapper div.dataTables_filter {
   display: none;
