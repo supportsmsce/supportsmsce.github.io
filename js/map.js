@@ -189,7 +189,7 @@
                 'type': 'symbol',
                 'source': 'places',
                 'layout': {
-                    'icon-image': 'rocket-15',
+                    'icon-image': 'rocket-11',
                     'icon-allow-overlap': true
                 }
             });
@@ -213,16 +213,17 @@
                 // Ensure that if the map is zoomed out such that multiple
                 // copies of the feature are visible, the popup appears
                 // over the copy being pointed to.
-                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-                }
+                // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                // }
 
                 new mapboxgl.Popup()
                     .setLngLat(coordinates)
-                    .setHTML('<h3>' + title + '</h3><p style="text-align:left">' + description + '</p>')
+                    .setHTML('<img class="img-fluid" src="img/projects/publixChannelClub.png"> <p style="text-align:left">' + description + '</p>')
                     .addTo(map);
 
-                    map.flyTo({ center: e.features[0].geometry.coordinates, zoom: 6, pitch: 30 });
+                    e.features[0].geometry.coordinates[1] = e.features[0].geometry.coordinates[1] - 5;
+                    map.flyTo({ center: e.features[0].geometry.coordinates, zoom: 5, pitch: 30 });
 
 
             });

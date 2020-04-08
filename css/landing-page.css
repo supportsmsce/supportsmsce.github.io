@@ -172,7 +172,7 @@ header.masthead {
 
 #map { 
  width: 100%;
- height: 45vh;
+ height: 60vh;
 }
 
 #projectMap_length {
@@ -188,6 +188,10 @@ header.masthead {
 } */
 
 div.dataTables_wrapper div.dataTables_filter {
+  display: none;
+}
+
+.mapboxgl-popup-close-button {
   display: none;
 }
 
