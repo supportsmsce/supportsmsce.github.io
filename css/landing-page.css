@@ -78,7 +78,7 @@ body {
 
 .overlay {
   width: 100%; /* Full width (cover the whole page) */
-  height: 70vh; /* Full height (cover the whole page) */
+  height: 60vh; /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
