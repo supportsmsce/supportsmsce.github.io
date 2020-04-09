@@ -189,7 +189,7 @@
                 'type': 'symbol',
                 'source': 'places',
                 'layout': {
-                    'icon-image': 'rocket-11',
+                    'icon-image': 'marker-15',
                     'icon-allow-overlap': true
                 }
             });
