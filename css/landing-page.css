@@ -233,6 +233,10 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
     margin: 20px;
 }
 
+.showcase-text > h3 {
+  font-style: italic;
+}
+
 .footer {
   /* position: fixed;
   bottom: 0; */
