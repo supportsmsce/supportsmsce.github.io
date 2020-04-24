@@ -348,6 +348,7 @@ header.masthead h1 {
 
   .home-logo {
     width:25%;
+    margin-top:0;
   }
 
   .siteName {
