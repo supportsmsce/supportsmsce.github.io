@@ -214,7 +214,7 @@ div.dataTables_wrapper div.dataTables_filter {
 }
 
 .mapboxgl-popup-content {
-  text-align: center;
+  /* text-align: center; */
   /* font-family: 'Open Sans', sans-serif; */
 }
 

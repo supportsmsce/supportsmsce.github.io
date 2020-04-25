@@ -41,19 +41,44 @@
                         coordinates: [-80.191788, 25.761681] // Miami Area
                     },
                     properties: {
-                        title: 'Miami',
-                        description: 'Riviera Country Club<br>Doral Police Facility<br>Jackson Healthcare West Campus<br>Brickell City Center North West Block Connection Design<br>Fairholme Museum<br>Miami World Center Luma Amentities Structure<br>Baptist Hospital Clinical Chasis Expansion<br>Miami Cancer Insitute<br>UM Frost'
+                        title: 'Miami, FL',
+                        description: 'Doral Police Facility<br>Jackson Healthcare West Campus<br>Brickell City Center North West Block Connection Design<br>Fairholme Museum<br>Miami World Center Luma Amentities Structure<br>Baptist Hospital Clinical Chasis Expansion<br>Miami Cancer Insitute<br>UM Frost'
                     }
                 },
                 {
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [-80.133591, 26.139412]
+                        coordinates: [-80.0581, 26.7753 ] // Miami Area
                     },
                     properties: {
-                        title: 'Ft Lauderdale',
-                        description: 'Aquablu'
+                        title: 'Palm Beach, FL',
+                        description: 'Riviera Country Club',
+                        img: 'img/projects/Riviera.jpg'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.053450, 26.707010]
+                    },
+                    properties: {
+                        title: 'Palm Beach, FL',
+                        description: 'Canopy Hotel',
+                        img: 'img/projects/canopy.jpg'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.1096, 26.1357]
+                    },
+                    properties: {
+                        title: 'Ft Lauderdale, FL',
+                        description: 'Aquablu',
+                        img: 'img/projects/aquablu.jpg' 
                     }
                 },
                 {
@@ -64,7 +89,8 @@
                     },
                     properties: {
                         title: 'Gold Beach, OR',
-                        description: 'Curry Public Library Addition'
+                        description: 'Curry Public Library Addition',
+                        
                     }
                 },
                 {
@@ -97,7 +123,9 @@
                     },
                     properties: {
                         title: 'Las Vegas, NV',
-                        description: 'UFC Headquarters'
+                        description: 'UFC Headquarters',
+                        img: 'img/projects/UFC_HQ.jpg' 
+
                     }
                 },
                 {
@@ -119,7 +147,9 @@
                     },
                     properties: {
                         title: 'New York City',
-                        description: 'NYC Southferry Subway Station'
+                        description: 'NYC Southferry Subway Station',
+                        img: 'img/projects/southferry.jpg' 
+
                     }
                 },
                 {
@@ -130,7 +160,32 @@
                     },
                     properties: {
                         title: 'Portland, OR',
-                        description: 'Dement Floating House<br>Hotel Chamberlain<br>Jupiter Hotel<br>L and L Hostel<br>Matanky Floating House'
+                        description: 'Dement Floating House<br>L and L Hostel<br>Matanky Floating House'
+                    }
+                },
+                
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-122.661450, 45.519010]
+                    },
+                    properties: {
+                        title: 'Portland, OR',
+                        description: 'Hotel Chamberlain',
+                        img: 'img/projects/chaimberlain.jpg'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-122.656960, 45.522549]
+                    },
+                    properties: {
+                        title: 'Portland, OR',
+                        description: 'Jupiter Hotel',
+                        img: 'img/projects/jupiter.jpg'
                     }
                 },
                 {
@@ -152,7 +207,9 @@
                     },
                     properties: {
                         title: 'Tampa, FL',
-                        description: 'Publix Channel Club'
+                        description: 'Publix Channel Club',
+                        img: 'img/projects/publixChannelClub.png' 
+
                     }
                 },
                 {
@@ -163,7 +220,8 @@
                     },
                     properties: {
                         title: 'Washington, DC',
-                        description: 'Audi Field (Connection Design)'
+                        description: 'Audi Field (Connection Design)',
+                        img: 'img/projects/audi.jpg'
                     }
                 },
                 {
@@ -174,7 +232,7 @@
                     },
                     properties: {
                         title: 'Palm Beach',
-                        description: 'Canopy Hotel <br> PBSO Evidence Facility<br>Florida Oceanographic Society Marine Center<br>WPB Spring Training Facility<br>ISTF Westlake'
+                        description: 'PBSO Evidence Facility<br>Florida Oceanographic Society Marine Center<br>WPB Spring Training Facility<br>ISTF Westlake'
                     }
                 }]
             };
@@ -207,6 +265,11 @@
                 var coordinates = e.features[0].geometry.coordinates.slice();
                 var description = e.features[0].properties.description;
                 var title = e.features[0].properties.title;
+                var img = e.features[0].properties.img;
+
+                if(!img) {
+                    img= "img/placeholder.png";
+                }
 
                 
 
@@ -219,7 +282,7 @@
 
                 new mapboxgl.Popup()
                     .setLngLat(coordinates)
-                    .setHTML('<img class="img-fluid" src="img/projects/publixChannelClub.png"> <p style="text-align:left">' + description + '</p>')
+                    .setHTML('<img class="img-fluid" src="'+img+'"> <p style="text-align:left; font-size: 1.5em;" class="p-0 m-0"> <strong>' + description + '</strong></p> <p style="font-size:1em;" class="p-0 m-0">' +title+'</p>')
                     .addTo(map);
 
                     e.features[0].geometry.coordinates[1] = e.features[0].geometry.coordinates[1] - 5;
