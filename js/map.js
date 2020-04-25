@@ -42,7 +42,19 @@
                     },
                     properties: {
                         title: 'Miami, FL',
-                        description: 'Doral Police Facility<br>Jackson Healthcare West Campus<br>Brickell City Center North West Block Connection Design<br>Fairholme Museum<br>Miami World Center Luma Amentities Structure<br>Baptist Hospital Clinical Chasis Expansion<br>Miami Cancer Insitute<br>UM Frost'
+                        description: 'Doral Police Facility<br>Jackson Healthcare West Campus<br>Brickell City Center North West Block Connection Design<br>Miami World Center Luma Amentities Structure<br>Baptist Hospital Clinical Chasis Expansion<br>Miami Cancer Insitute<br>UM Frost'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.1862, 25.7859] // Miami Area
+                    },
+                    properties: {
+                        title: 'Miami, FL',
+                        description: 'Fairholme Museum',
+                        img: 'img/projects/FairholmeMuseum.jpg'
                     }
                 },
                 {
