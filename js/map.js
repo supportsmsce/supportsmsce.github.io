@@ -38,11 +38,77 @@
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [-80.191788, 25.761681] // Miami Area
+                        coordinates: [-80.337244, 25.687209] // Miami Area
                     },
                     properties: {
                         title: 'Miami, FL',
-                        description: 'Doral Police Facility<br>Jackson Healthcare West Campus<br>Brickell City Center North West Block Connection Design<br>Miami World Center Luma Amentities Structure<br>Baptist Hospital Clinical Chasis Expansion<br>Miami Cancer Insitute<br>UM Frost'
+                        description: 'Miami Cancer Insitute'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.456809, 25.680449] // Miami Area
+                    },
+                    properties: {
+                        title: 'Miami, FL',
+                        description: 'Baptist Hospital Clinical Chasis Expansion'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.279963, 25.720037] // Miami Area
+                    },
+                    properties: {
+                        title: 'Coral Gables, FL',
+                        description: 'UM Frost'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.192242, 25.782329] // Miami Area
+                    },
+                    properties: {
+                        title: 'Miami, FL',
+                        description: 'Miami World Center Luma Amentities Structure'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.359059, 25.833409] // Miami Area
+                    },
+                    properties: {
+                        title: 'Doral, FL',
+                        description: 'Doral Police Facility'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.323373, 25.800245] // Miami Area
+                    },
+                    properties: {
+                        title: 'Miami, FL',
+                        description: 'Jackson Healthcare West Campus'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.192557, 25.767410] // Miami Area
+                    },
+                    properties: {
+                        title: 'Miami, FL',
+                        description: 'Brickell City Center NW Connection Design'
                     }
                 },
                 {
@@ -147,8 +213,8 @@
                         coordinates: [-118.243683, 34.052235]
                     },
                     properties: {
-                        title: 'Los Angeles',
-                        description: 'LAX terminal 3 Concourse/Connector (Delta)<br>LAX terminal 3 Satellite (Delta)<br>LAX Terminal 4 (American)'
+                        title: 'Los Angeles, CA',
+                        description: 'LAX Terminal 3 Concourse, Connector and Satellite<br>LAX Terminal 4 (American)'
                     }
                 },
                 {
@@ -158,7 +224,7 @@
                         coordinates: [-73.935242, 40.730610]
                     },
                     properties: {
-                        title: 'New York City',
+                        title: 'New York City, NY',
                         description: 'NYC Southferry Subway Station',
                         img: 'img/projects/southferry.jpg' 
 
@@ -168,14 +234,24 @@
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [-122.676483, 45.523064]
+                        coordinates: [-122.649071, 45.522884]
                     },
                     properties: {
                         title: 'Portland, OR',
-                        description: 'Dement Floating House<br>L and L Hostel<br>Matanky Floating House'
+                        description: 'L and L Hostel'
                     }
                 },
-                
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-122.715788, 45.555851]
+                    },
+                    properties: {
+                        title: 'Portland, OR',
+                        description: 'Dement and Matanky Floating Houses'
+                    }
+                },
                 {
                     type: 'Feature',
                     geometry: {
@@ -204,11 +280,44 @@
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [-84.253334, 30.455000]
+                        coordinates: [-84.295710, 30.436220]
                     },
                     properties: {
                         title: 'Tallahassee, FL',
-                        description: 'Collegetown Phase II<br>Doak Campbell Stadium - South End Zone Renovations<br>Doak Campbell Stadium - Structural Condition Assesment<br>Donald L. Tucker Center - Facility Upgrades<br>FSU Housing II, Seminole Boosters Inc - Champions Hall'
+                        description: 'Collegetown Phase II'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-84.304655, 30.436461]
+                    },
+                    properties: {
+                        title: 'Tallahassee, FL',
+                        description: 'Doak Campbell Stadium - South End Zone'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-84.284781, 30.438748]
+                    },
+                    properties: {
+                        title: 'Tallahassee, FL',
+                        description: 'Donald L. Tucker Center - Facility Upgrades'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-84.308100, 30.440160]
+                    },
+                    properties: {
+                        title: 'Tallahassee, FL',
+                        description: 'FSU Housing II - Champions Hall'
                     }
                 },
                 {
@@ -240,11 +349,44 @@
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [-80.064163, 26.709723]
+                        coordinates: [-80.093700, 26.670990]
                     },
                     properties: {
-                        title: 'Palm Beach',
-                        description: 'PBSO Evidence Facility<br>Florida Oceanographic Society Marine Center<br>WPB Spring Training Facility<br>ISTF Westlake'
+                        title: 'West Palm Beach, FL',
+                        description: 'PBSO Evidence Facility'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.178130, 27.215500]
+                    },
+                    properties: {
+                        title: 'Stuart, FL',
+                        description: 'Florida Oceanographic Society Marine Center'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.122398, 26.598949]
+                    },
+                    properties: {
+                        title: 'West Palm Beach, FL',
+                        description: 'WPB Spring Training Facility'
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-80.307936, 26.741576]
+                    },
+                    properties: {
+                        title: 'Palm Beach, FL',
+                        description: 'ISTF Westlake'
                     }
                 }]
             };
@@ -267,7 +409,7 @@
             var fixButton = document.getElementById('resizeMap');
 
             fixButton.onclick = function() {
-                console.log("resizing");
+                console.log(map);
                 map.flyTo({center: [-89.38, 39], // starting position
                     zoom: 3, pitch:0});
             }   
@@ -297,8 +439,13 @@
                     .setHTML('<img class="img-fluid" src="'+img+'"> <p style="text-align:left; font-size: 1.5em;" class="p-0 m-0"> <strong>' + description + '</strong></p> <p style="font-size:1em;" class="p-0 m-0">' +title+'</p>')
                     .addTo(map);
 
-                    e.features[0].geometry.coordinates[1] = e.features[0].geometry.coordinates[1] - 5;
-                    map.flyTo({ center: e.features[0].geometry.coordinates, zoom: 5, pitch: 30 });
+                    e.features[0]._geometry.coordinates[1] = e.features[0]._geometry.coordinates[1] - 0.025;
+                    var zoom = 5;
+
+                    if(map.getZoom() >4) {
+                        zoom =map.getZoom();
+                    }
+                    map.flyTo({ center: e.features[0].geometry.coordinates, zoom: zoom });
 
 
             });
