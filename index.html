@@ -12,6 +12,8 @@
   <meta name="author" content="">
 
   <title>Stanford Muniz + Schnepple</title>
+  <!-- <base href="../"> -->
+
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,7 +22,7 @@
 
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href='https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css' rel='stylesheet' />
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
   <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
   <link href="css/landing-page.css" rel="stylesheet">
@@ -63,7 +65,6 @@
       </ul>
     </div>
   </nav>
-
   <!-- Masthead -->
   <header class=" text-white text-center">
 
@@ -72,8 +73,7 @@
         <div class="centered-table">
           <div class="content-table">
             <img style="opacity:40" class="home-logo img-fluid fadeinA" src="img/logo-blue.png">
-            <h1 class="siteName font-weight-light d-none d-md-block">FL | NV | CA</h1>
-
+            <h1 class="siteName font-weight-light d-none d-md-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Florida &nbsp;| Nevada | California</h1>
             <div class="container-fluid">
               <a href="#about" class=" learn-more btn btn-large fadeinC trans3">
                 <i class="fa fa-chevron-down"> </i>
@@ -95,53 +95,113 @@
   <!-- About Firm -->
   <section class="showcase module" id="about">
     <div class="container-fluid p-0">
-      <div class="row no-gutters module ">
 
-        <div class="col-lg-8 order-lg-2 pt-3 my-auto showcase-text">
-          <h3>Designing Tomorrow. Today </h3>
-          <p class="lead mb-0">We’re experienced in the design of structures in urban and suburban markets. After years of designing
-              and managing architecturally focused projects, at well respected firms, we arrived at the conclusion that the
-              process can be improved. We’re proud to begin this new chapter as SM+S Consulting Engineers.
+      <div class="row module ">
+
+        <div class="col-lg-10 mpt-3 my-auto showcase-text">
+            <h3>Designing Tomorrow. Today </h3>
+            <p class="lead mb-0">We’re experienced in the design of structures in urban and suburban markets. After years of designing
+            and managing architecturally focused projects, at well respected firms, we arrived at the conclusion that the
+            process can be improved. We’re proud to begin this new chapter as SM+S Consulting Engineers.
+          </p>
+        </div>
+        <!-- <div class="col-lg-4 order-lg-1 animated slideInRight text-white showcase-img" style="background-image: url('img/aboutMiami.jpg');"></div> -->
+
+      </div>
+
+      <div class="row no-gutters mb-3">
+        <div class="col-md-9">
+          <img class="img img-fluid" src="img/projects/IPic-Delray.jpg" alt="">
+          <p class=" ml-3"> <strong>     *IPIC Theathers </strong>
+            <br>
+            <sub> Delray Beach, FL </sub>
+          </p>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+
+
+      </div>
+      <div class="row module ">
+
+          <div class="col-lg-10 mpt-3 my-auto showcase-text">
+            <h3>Realize Your Vision </h3>
+            <p class="lead mb-0">We believe that architecture and structural engineering serve to advance each other, 
+              continuously reinventing what is possible. Our commitment is to innovative design that respects your intent, 
+              and assurance about possibilities regarding cost, and constructability.
             </p>
+          </div>
+          <!-- <div class="col-lg-4 order-lg-1 animated slideInRight text-white showcase-img" style="background-image: url('img/aboutMiami.jpg');"></div> -->
+  
         </div>
-        <div class="col-lg-4 order-lg-1 animated slideInRight text-white showcase-img" style="background-image: url('img/aboutMiami.jpg');"></div>
-
-      </div>
-      <div class="row no-gutters p-5 module bg-light">
-        <div class="col-lg-7 my-auto showcase-text">
-          <h3>Maximize Your Value</h3>
-          <p class="lead mb-0">By taking advantage of modern software workflows we create time that allow us to focus on what 
-            matters... finding the ideal solutions for your vision, coordination, and meeting demanding project schedules; 
-            all while maintaining our uncompromising standards for our deliverables.
-          </p>
+  
+        <div class="row no-gutters mb-3">
+          <div class="col-md-12">
+            <img class="img img-fluid" src="img/projects/southferry.jpg" alt="">
+            <p class=" ml-3"> <strong>     *NY South Ferry </strong>
+              <br>
+              <sub> New York, NY </sub>
+            </p>
+          </div>
+          <!-- <div class="col-md-3">
+  
+          </div> -->
+  
+  
         </div>
-        <div class="col-lg-5 text-white showcase-img animated slideInLeft" style="background-image: url('img/aboutVegas.jpg');"></div>
-
+      <div class="row">
+        <div class="col-12" style="height: 5vh;"></div>
       </div>
+      <div class="row no-gutters bg-light pt-5">
+          <div class="col-md-12 mb-5" style="text-align: center">
+              <h3>Maximize Your Value</h3>
+            </div>
+          <div class="col-md-5">
+              <p class="lead mb-0 p-5">By taking advantage of modern software workflows we create time that allow us to focus on what matters... finding
+                  the ideal solutions for your vision, coordination, and meeting demanding project schedules; all while maintaining
+                  our uncompromising standards for our deliverables.
+                </p>
+            </div>
+          <div class="col-md-7">
+            <img class="img img-fluid" src="img/projects/FairholmeMuseum.jpg" alt="">
+            <p class=""><strong>  *Fairholme Museum </strong>
+              <br>
+              <sub> Miami, FL </sub>
+            </p>
+          </div>
+          
+  
+  
+        </div>
       <div class="row no-gutters module">
-        <div class="col-lg-7 order-lg-1 text-white showcase-img animated slideInRight">
+        <!-- <div class="col-lg-7 order-lg-1 text-white showcase-img animated slideInRight">
           <img src="img/aboutLA.jpg" class="img img-fluid" alt="">
-        </div>
-        <div class="col-lg-5 order-lg-2 my-auto showcase-text">
+        </div> -->
+        <div class="col-lg-12  my-auto showcase-text">
           <h3>Redefine Your Expectations</h3>
-          <p class="lead mb-0">Our expectation of excellence isn’t limited to only our technical abilities and deliverables, 
-            but  the service that we provide our clients.  We’re committed to providing service that exceeds industry expectations. 
-            When you reach out we WILL respond. 
-              
+          <p class="lead mb-0">Our expectation of excellence isn’t limited to only our technical abilities and deliverables, but the service that
+            we provide our clients. We’re committed to providing service that exceeds industry expectations. When you reach
+            out we WILL respond.
+
           </p>
         </div>
       </div>
+      <div class="row no-gutters mb-3">
+          <div class="col-md-8">
+            <img class="img img-fluid" src="img/projects/UFC_HQ.jpg" alt="">
+            <p class=" ml-3"> <strong>     *UFC Headquarters </strong>
+              <br>
+              <sub> Las Vegas, NV </sub>
+            </p>
+          </div>
+          <div class="col-md-4">
+  
+          </div>
+  
+  
+        </div>
     </div>
-    <div class="row no-gutters p-5 module bg-light">
-        <div class="col-lg-7 my-auto showcase-text">
-          <h3>Realize Your Vision</h3>
-          <p class="lead mb-0">We believe that architecture and structural engineering serve to advance each other, continuously reinventing what is possible. Our commitment is to innovative design that respects your intent, and assurance about possibilities regarding cost, and constructability.
-
-          </p>
-        </div>
-        <div class="col-lg-5 text-white showcase-img animated slideInLeft" style="background-image: url('img/projects/FairholmeMuseum.jpg');"></div>
-
-      </div>
   </section>
 
   <!-- Projects -->
@@ -648,7 +708,7 @@
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src='https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js'></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
   <script src='https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js'></script>
   <script src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js'></script>
   <script src="js/map.js"></script>
