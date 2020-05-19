@@ -124,19 +124,26 @@ h6 {
 }
 
 .come-in {
-  transform: translateY(150px);
-  animation: come-in 1.8s ease forwards;
+  /* transform: translateY(150px); */
+  animation: fadeIn ease 20s;
+-webkit-animation: fadeIn ease 20s;
+-moz-animation: fadeIn ease 20s;
+-o-animation: fadeIn ease 20s;
+-ms-animation: fadeIn ease 20s;
+animation-duration: 2.5s;
+
 }
 .come-in:nth-child(odd) {
-  animation-duration: 1.0s;
+  animation-duration: 2.5s;
 }
 .already-visible {
-  transform: translateY(0);
-  animation: none;
+  animation: fadeIn ease 20s;
+
 }
 
 @keyframes come-in {
-  to { transform: translateY(0); }
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 header.masthead {
