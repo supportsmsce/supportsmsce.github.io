@@ -214,7 +214,8 @@
                     },
                     properties: {
                         title: 'Los Angeles, CA',
-                        description: 'LAX Terminal 3 Concourse, Connector and Satellite<br>LAX Terminal 4 (American)'
+                        description: 'LAX Terminal 3 Concourse, Connector and Satellite<br>LAX Terminal 4 (American)',
+                        'marker-symbol': 'rocket'
                     }
                 },
                 {
@@ -402,17 +403,42 @@
                 'source': 'places',
                 'layout': {
                     'icon-image': 'marker-15',
+                    'icon-size': 2,
                     'icon-allow-overlap': true
                 }
             });
 
             var fixButton = document.getElementById('resizeMap');
+            var flMap = document.getElementById('flMap');
+            var caMap = document.getElementById('caMap');
+            var nyMap = document.getElementById('nyMap');
+            var orMap = document.getElementById('orMap');
 
             fixButton.onclick = function() {
                 console.log(map);
                 map.flyTo({center: [-89.38, 39], // starting position
                     zoom: 3, pitch:0});
-            }   
+            } 
+            flMap.onclick = function() {
+                console.log(map);
+                map.flyTo({center: [-81.3792, 28.5383], // starting position
+                    zoom: 5, pitch:0});
+            } 
+            orMap.onclick = function() {
+                console.log(map);
+                map.flyTo({center: [-120.8345, 44.0998], // starting position
+                    zoom: 6, pitch:0});
+            }
+            caMap.onclick = function() {
+                console.log(map);
+                map.flyTo({center: [-121.2908, 37.9577], // starting position
+                    zoom: 5, pitch:0});
+            }
+            nyMap.onclick = function() {
+                console.log(map);
+                map.flyTo({center: [-73.7562, 42.6526], // starting position
+                    zoom: 6, pitch:0});
+            }
 
 
             map.on('click', 'places', function (e) {
@@ -439,10 +465,11 @@
                     .setHTML('<img class="img-fluid" src="'+img+'"> <p style="text-align:left; font-size: 1.5em;" class="p-0 m-0"> <strong>' + description + '</strong></p> <p style="font-size:1em;" class="p-0 m-0">' +title+'</p>')
                     .addTo(map);
 
-                    e.features[0]._geometry.coordinates[1] = e.features[0]._geometry.coordinates[1] - 0.025;
-                    var zoom = 5;
+                    // e.features[0]._geometry.coordinates[1] = e.features[0]._geometry.coordinates[1] - 0.025;
+                    var zoom = 10;
+                    console.log("zooming to " + zoom);
 
-                    if(map.getZoom() >4) {
+                    if(map.getZoom() >10) {
                         zoom =map.getZoom();
                     }
                     map.flyTo({ center: e.features[0].geometry.coordinates, zoom: zoom });
