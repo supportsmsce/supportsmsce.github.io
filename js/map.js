@@ -413,6 +413,8 @@
             var caMap = document.getElementById('caMap');
             var nyMap = document.getElementById('nyMap');
             var orMap = document.getElementById('orMap');
+            var waMap = document.getElementById('waMap');
+
 
             fixButton.onclick = function() {
                 console.log(map);
@@ -438,6 +440,12 @@
                 console.log(map);
                 map.flyTo({center: [-73.7562, 42.6526], // starting position
                     zoom: 6, pitch:0});
+            }
+
+            waMap.onclick = function() {
+                console.log(map);
+                map.flyTo({center: [-77.032, 38.913], // starting position
+                    zoom: 15, pitch:0});
             }
 
 
