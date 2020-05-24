@@ -403,7 +403,7 @@
                 'source': 'places',
                 'layout': {
                     'icon-image': 'marker-15',
-                    'icon-size': 2,
+                    'icon-size': 1,
                     'icon-allow-overlap': true
                 }
             });
@@ -417,36 +417,54 @@
 
 
             fixButton.onclick = function() {
+                map.fire('closeAllPopups');
                 console.log(map);
                 map.flyTo({center: [-89.38, 39], // starting position
                     zoom: 3, pitch:0});
             } 
             flMap.onclick = function() {
+                map.fire('closeAllPopups');
                 console.log(map);
                 map.flyTo({center: [-81.3792, 28.5383], // starting position
                     zoom: 5, pitch:0});
             } 
             orMap.onclick = function() {
+                map.fire('closeAllPopups');
                 console.log(map);
                 map.flyTo({center: [-120.8345, 44.0998], // starting position
                     zoom: 6, pitch:0});
             }
             caMap.onclick = function() {
+                map.fire('closeAllPopups');
                 console.log(map);
                 map.flyTo({center: [-121.2908, 37.9577], // starting position
                     zoom: 5, pitch:0});
             }
             nyMap.onclick = function() {
+                map.fire('closeAllPopups');
                 console.log(map);
                 map.flyTo({center: [-73.7562, 42.6526], // starting position
                     zoom: 6, pitch:0});
             }
 
             waMap.onclick = function() {
+                map.fire('closeAllPopups');
                 console.log(map);
                 map.flyTo({center: [-77.032, 38.913], // starting position
                     zoom: 15, pitch:0});
             }
+
+            projects.features.forEach(function(marker) {
+
+                // create a HTML element for each feature
+                var el = document.createElement('div');
+                el.className = 'marker';
+              
+                // make a marker for each feature and add to the map
+                new mapboxgl.Marker(el)
+                  .setLngLat(marker.geometry.coordinates)
+                  .addTo(map);
+              });
 
 
             map.on('click', 'places', function (e) {
@@ -468,7 +486,7 @@
                 //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 // }
 
-                new mapboxgl.Popup()
+                const popup = new mapboxgl.Popup({})
                     .setLngLat(coordinates)
                     .setHTML('<img class="img-fluid" src="'+img+'"> <p style="text-align:left; font-size: 1.5em;" class="p-0 m-0"> <strong>' + description + '</strong></p> <p style="font-size:1em;" class="p-0 m-0">' +title+'</p>')
                     .addTo(map);
@@ -481,6 +499,11 @@
                         zoom =map.getZoom();
                     }
                     map.flyTo({ center: e.features[0].geometry.coordinates, zoom: zoom });
+
+                map.on('closeAllPopups', () => {
+                    popup.remove();
+                });
+                    
 
 
             });
