@@ -49,17 +49,6 @@
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [-80.456809, 25.680449] // Miami Area
-                    },
-                    properties: {
-                        title: 'Miami, FL',
-                        description: 'Baptist Hospital Clinical Chasis Expansion'
-                    }
-                },
-                {
-                    type: 'Feature',
-                    geometry: {
-                        type: 'Point',
                         coordinates: [-80.192242, 25.782329] // Miami Area
                     },
                     properties: {
@@ -366,17 +355,6 @@
                     properties: {
                         title: 'West Palm Beach, FL',
                         description: 'WPB Spring Training Facility'
-                    }
-                },
-                {
-                    type: 'Feature',
-                    geometry: {
-                        type: 'Point',
-                        coordinates: [-80.307936, 26.741576]
-                    },
-                    properties: {
-                        title: 'Palm Beach, FL',
-                        description: 'ISTF Westlake'
                     }
                 }]
             };
