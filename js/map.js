@@ -42,7 +42,8 @@
                     },
                     properties: {
                         title: 'Miami, FL',
-                        description: 'Miami Cancer Institute'
+                        description: 'Miami Cancer Institute',
+                        img: 'img/projects/cancer.jpg'
                     }
                 },
                 {
@@ -53,7 +54,8 @@
                     },
                     properties: {
                         title: 'Miami, FL',
-                        description: 'Miami World Center Luma Amentities Structure'
+                        description: 'Miami World Center Luma Amentities Structure',
+                        img: 'img/projects/luma.jpg'
                     }
                 },
                 {
@@ -75,7 +77,8 @@
                     },
                     properties: {
                         title: 'Miami, FL',
-                        description: 'Jackson Healthcare West Campus'
+                        description: 'Jackson Healthcare West Campus',
+                        img: 'img/projects/jackson-west.jpg'
                     }
                 },
                 {
@@ -228,7 +231,8 @@
                     },
                     properties: {
                         title: 'Portland, OR',
-                        description: 'Dement and Matanky Floating Houses'
+                        description: 'Dement and Matanky Floating Houses',
+                        img: 'img/projects/dement.jpg'
                     }
                 },
                 {
@@ -263,7 +267,8 @@
                     },
                     properties: {
                         title: 'Tallahassee, FL',
-                        description: 'Collegetown Phase II'
+                        description: 'Collegetown Phase II',
+                        img: 'img/projects/collegetown.png'
                     }
                 },
                 {
@@ -296,7 +301,8 @@
                     },
                     properties: {
                         title: 'Tallahassee, FL',
-                        description: 'FSU Housing II - Champions Hall'
+                        description: 'FSU Housing II - Champions Hall',
+                        img: 'img/projects/champions.png'
                     }
                 },
                 {
@@ -332,7 +338,8 @@
                     },
                     properties: {
                         title: 'West Palm Beach, FL',
-                        description: 'PBSO Evidence Facility'
+                        description: 'PBSO Evidence Facility',
+                        img: 'img/projects/westpalm.jpg'
                     }
                 },
                 {
