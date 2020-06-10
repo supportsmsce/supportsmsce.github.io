@@ -244,7 +244,7 @@
                     properties: {
                         title: 'Portland, OR',
                         description: 'Hotel Chamberlain',
-                        img: 'img/projects/chaimberlain.jpg'
+                        img: 'img/projects/chaimberlain.png'
                     }
                 },
                 {
