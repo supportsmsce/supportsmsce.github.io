@@ -60,17 +60,6 @@
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [-80.279963, 25.720037] // Miami Area
-                    },
-                    properties: {
-                        title: 'Coral Gables, FL',
-                        description: 'UM Frost'
-                    }
-                },
-                {
-                    type: 'Feature',
-                    geometry: {
-                        type: 'Point',
                         coordinates: [-80.192242, 25.782329] // Miami Area
                     },
                     properties: {
