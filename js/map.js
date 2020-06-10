@@ -42,7 +42,7 @@
                     },
                     properties: {
                         title: 'Miami, FL',
-                        description: 'Miami Cancer Insitute'
+                        description: 'Miami Cancer Institute'
                     }
                 },
                 {
